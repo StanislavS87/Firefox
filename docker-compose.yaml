@@ -1,6 +1,8 @@
 version: "2"
 services:
   firefox:
-    image: linuxserver/firefox:101.0.1
+    image: aaguilar/midori
     container_name: firefox
     restart: no
+  ports:
+    - 22000:5901
