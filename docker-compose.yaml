@@ -4,5 +4,5 @@ services:
     image: aaguilar/midori
     container_name: firefox
     restart: no
-ports:
-  - 22000:5901 # Calibre webserver gui.
+  ports:
+    - 22000:5901 # Calibre webserver gui.
