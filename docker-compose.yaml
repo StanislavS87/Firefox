@@ -1,6 +1,6 @@
 version: "2"
 services:
-  firefox:
+  Midori:
     image: aaguilar/midori
     container_name: firefox
     restart: no
