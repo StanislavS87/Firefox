@@ -1,0 +1,6 @@
+version: "2"
+services:
+  firefox:
+    image: linuxserver/firefox:101.0.1
+    container_name: firefox
+    restart: no
