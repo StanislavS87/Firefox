@@ -6,4 +6,4 @@ services:
       - AXIGEN_PRECONFIGURED=yes
       - AXIGEN_ADMIN_PASSWORD=unknownadmin
     ports:
-      - 22000:5901
+      - 5901:5901
