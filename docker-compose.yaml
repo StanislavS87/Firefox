@@ -7,3 +7,4 @@ services:
       - AXIGEN_ADMIN_PASSWORD=unknownadmin
     ports:
       - 5901:5901
+      - 5801:5801
