@@ -1,8 +1,9 @@
 version: "2"
 services:
-  Midori:
+  midori:
     image: aaguilar/midori
-    container_name: Midori
-    restart: no
-  ports:
-    - 22000:5901
+    environment:
+      - AXIGEN_PRECONFIGURED=yes
+      - AXIGEN_ADMIN_PASSWORD=unknownadmin
+    ports:
+      - 22000:5901
