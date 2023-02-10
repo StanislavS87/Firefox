@@ -9,6 +9,6 @@ services:
       - PLEX_CLAIM=<claimToken>
     network_mode: host
     volumes:
-      -ck:/config
-      -tr:/transcode
+      - ck:/config
+      - tr:/transcode
       - data:/data
