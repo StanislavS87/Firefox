@@ -1,10 +1,14 @@
-version: "2"
+version: '2'
 services:
-  midori:
-    image: aaguilar/midori
+  plex:
+    container_name: plex
+    image: plexinc/pms-docker
+    restart: unless-stopped
     environment:
-      - AXIGEN_PRECONFIGURED=yes
-      - AXIGEN_ADMIN_PASSWORD=unknownadmin
-    ports:
-      - 5901:5901
-      - 5801:5801
+      - TZ=EUROPE/Sofia
+      - PLEX_CLAIM=<claimToken>
+    network_mode: host
+    volumes:
+      -ck:/config
+      -tr:/transcode
+      - data:/data
