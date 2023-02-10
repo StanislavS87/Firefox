@@ -11,9 +11,9 @@ services:
     volumes:
       - ck:/config
       - tr:/transcode
-      - data:/data
-  volumes:
-       ck:
-       tr:
-       data:
+      - data:/data      
+volumes:
+   ck:
+   tr:
+   data:
   
