@@ -8,6 +8,8 @@ services:
       - TZ=EUROPE/Sofia
       - PLEX_CLAIM=<claimToken>
     network_mode: host
+    ports:
+      - 32400:32400
     volumes:
       - ck:/config
       - tr:/transcode
